@@ -28,7 +28,7 @@ void executeSqlStatement(sqlite3 *db, char* sql){
 void CreateTablePersonal(sqlite3* db, char *sql){
     sql = "CREATE TABLE PERSONAL("  \
         "CNP VARCHAR(14) PRIMARY KEY     NOT NULL," \
-        "NUME           TEXT    NOT NULL);";
+        "NUME TEXT NOT NULL);";
     executeSqlStatement(db, sql);
 }
     void CreateTableBuget(sqlite3* db, char *sql){
